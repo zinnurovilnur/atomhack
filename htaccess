@@ -1,0 +1,50 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page11713721.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^main$ page11713721.html [NC]
+RewriteRule ^main/$ page11713721.html [NC]
+
+RewriteRule ^municipality$ page11727071.html [NC]
+RewriteRule ^municipality/$ page11727071.html [NC]
+
+RewriteRule ^businesskomposites$ page11727519.html [NC]
+RewriteRule ^businesskomposites/$ page11727519.html [NC]
+
+RewriteRule ^companies$ page11733782.html [NC]
+RewriteRule ^companies/$ page11733782.html [NC]
+
+RewriteRule ^investors$ page11736721.html [NC]
+RewriteRule ^investors/$ page11736721.html [NC]
+
+RewriteRule ^menu$ page11737126.html [NC]
+RewriteRule ^menu/$ page11737126.html [NC]
+
+RewriteRule ^border$ page11737299.html [NC]
+RewriteRule ^border/$ page11737299.html [NC]
+
+RewriteRule ^onas$ page11737431.html [NC]
+RewriteRule ^onas/$ page11737431.html [NC]
+
+RewriteRule ^lkbusiness$ page11754035.html [NC]
+RewriteRule ^lkbusiness/$ page11754035.html [NC]
+
+RewriteRule ^fransizi$ page11755276.html [NC]
+RewriteRule ^fransizi/$ page11755276.html [NC]
+
+RewriteRule ^nedviz$ page11756873.html [NC]
+RewriteRule ^nedviz/$ page11756873.html [NC]
+
+RewriteRule ^invest$ page11756911.html [NC]
+RewriteRule ^invest/$ page11756911.html [NC]
+
+RewriteRule ^members/ ma_start.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3535-6134-4865-b533-353438356138/favicon_1.ico [R=302,L]
+
